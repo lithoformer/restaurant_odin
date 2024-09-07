@@ -20,7 +20,7 @@ const home = function home() {
 
     const desc = document.createElement('p')
     desc.style.color = `white`;
-    desc.style.fontSize = `2.5vw`;
+    desc.style.fontSize = `4vw`;
     desc.textContent = `Serving New Jersey since 1980 and offering up a unique selection of bagels, wraps, sandwiches, and smoothies.  Voted Best Bagels in New Jersey 5 times in a row by New Jersey News!`;
     desc.style.margin = `5vw`;
     title.appendChild(logo);
