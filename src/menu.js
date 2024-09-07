@@ -2,6 +2,7 @@ import "./styles.css";
 import pc from "./Philly-Cheesesteak-Wrap-Real-Food-by-Dad.jpg";
 import bg from "./Everything-Bagel-Breakfast-Sandwich-6-700x1050.jpg";
 import sw from "./buttermilk_crispy_chicken_sandwich-7.jpg";
+import sm from "./photo-1645783916385-1c99860a2a42.avif";
 
 const menu = function menu() {
     const content = document.querySelector('#content');
@@ -84,8 +85,8 @@ const menu = function menu() {
     bender.textContent = `THE BENDER - roast beef, proscuitto, swiss cheese, jalapenos, banana peppers, and cranberry sauce on a hero - $8`;
     monster.textContent = `THE MONSTER - chicken cutlet, provolone cheese, fried tater tots, and buffalo sauce on a roll - $8`;
     club.textContent = `THE CLUB - honey ham, turkey, tomatoes, onions, pepper jack cheese, and honey mustard on sliced white bread - $8`;
-    american.textContent = `THE AMERICAN - grilled chicken, carmelized onions, American cheese, and bbq sauce on a roll - $8`;
-    spy.textContent = `THE SPY - steak, avocado, pickles, mozzarella cheese, and vodka sauce on an everything bagel - $8`;
+    american.textContent = `THE AMERICAN - grilled chicken, avocado, carmelized onions, American cheese, and bbq sauce on a roll - $8`;
+    spy.textContent = `THE SPY - steak, onion rings, pickles, mozzarella cheese, and vodka sauce on an everything bagel - $8`;
     fries.textContent = `Add french fries ($3) or sweet potato fries ($4)`;
     sandwiches.appendChild(sandwichText);
     sandwichList.appendChild(bender);
@@ -100,12 +101,39 @@ const menu = function menu() {
     sandwichOuter.appendChild(sandwiches);
     sandwichOuter.appendChild(sandwichImg);
 
+    const smoothieOuter = document.createElement('div');
     const smoothies = document.createElement('div');
+    const smoothieImg = document.createElement('img');
+    smoothieImg.src = sm;
+    const smoothieText = document.createElement('span');
+    const smoothieList = document.createElement('ul');
+    const cola = document.createElement('li');
+    const tropical = document.createElement('li');
+    const blue = document.createElement('li');
+    const greentea = document.createElement('li');
+    const boba = document.createElement('li');
+    smoothieText.textContent = 'Smoothies';
+    cola.textContent = `THE COLA - roasted coffee, coca cola, and caramel sauce in a crushed ice blend - $6`;
+    tropical.textContent = `THE TROPICAL - mango, orange, watermelon, banana, cantaloupe, and mint leaves blend - $6`;
+    blue.textContent = `THE BLUE - blueberries, pomegranate, strawberries, honey, and lime blend - $6`;
+    greentea.textContent = `THE GREEN - matcha green tea and green tea ice cream in a crushed ice blend - $6`;
+    boba.textContent = `THE BOBA - red bean, taro, milk tea, and boba in a crushed ice blend - $6`;
+    smoothies.appendChild(smoothieText);
+    smoothieList.appendChild(cola);
+    smoothieList.appendChild(tropical);
+    smoothieList.appendChild(blue);
+    smoothieList.appendChild(greentea);
+    smoothieList.appendChild(boba);
+    smoothies.appendChild(smoothieList);
+    smoothies.classList.add('menuPanel');
+    smoothieOuter.classList.add('outer');
+    smoothieOuter.appendChild(smoothies);
+    smoothieOuter.appendChild(smoothieImg);
 
     innerContent.appendChild(bagelOuter);
     innerContent.appendChild(wrapOuter);
     innerContent.appendChild(sandwichOuter);
-    // innerContent.appendChild(smoothieOuter);
+    innerContent.appendChild(smoothieOuter);
 
     innerContent.style.display = `flex`;
     innerContent.style.alignItems = `center`;
