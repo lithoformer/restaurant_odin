@@ -113,14 +113,8 @@ const menu = function menu() {
     innerContent.style.flexDirection = `column`;
     innerContent.style.maxHeight = `100%`;
     innerContent.style.maxWidth = `100%`;
-    innerContent.style.marginTop = `400px`;
 
     content.appendChild(innerContent);
-
-    content.style.display = `flex`;
-    content.style.alignItems = `center`;
-    content.style.justifyContent = `center`;
-    content.style.flexDirection = `column`;
 }
 
 export { menu };

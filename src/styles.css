@@ -4,14 +4,19 @@
     font-family: 'Nerko One', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+html {
+    max-width: 100vw;
+    width: 100%;
+}
+
 body {
     background-color: black;
     background-image: url(./photo-1518562923427-19e694fbd8e9.avif);
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100vw;
-    height: 100vh;
+    background-position: absolute;
+    background-repeat: repeat;
+    background-size: 100% auto;
+    max-width: 100%;
+    max-height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -22,19 +27,18 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    max-height: 100%;
+    max-height: calc(100% - 90px);
     max-width: 100%;
-    overflow: auto;
 }
 
 .btn {
     border: none;
-    width: 120px;
-    height: 50px;
-    font-size: 2rem;
+    max-width: 30vw;
+    max-height: 20vh;
+    font-size: 1.5rem;
     background-color: chocolate;
     border-radius: .5rem;
-    margin: 20px;
+    margin: 1vw;
 }
 
 .btn:hover {
@@ -45,12 +49,12 @@ body {
 
 li {
     color: white;
-    font-size: 1vw;
+    font-size: 1.5vw;
 }
 
 span {
     color: chocolate;
-    font-size: 3rem;
+    font-size: 2vw;
     font-weight: bolder;
 }
 
@@ -66,9 +70,8 @@ span {
 
 .outer {
     display: flex;
-    max-width: 100%;
-    max-height: 100%;
-    width: 100%;
+    max-width: 100vw;
+    max-height: 100vh;
     gap: 1rem;
     display: flex;
     align-items: center;
@@ -77,7 +80,7 @@ span {
 }
 
 img {
-    max-width: 10vw;
+    max-width: 15vw;
     width: auto;
     height: auto;
     margin: 50px;
