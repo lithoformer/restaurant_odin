@@ -1,6 +1,7 @@
 import "./styles.css";
-import pc from "./Philly-Cheesesteak-Wrap-Real-Food-by-Dad.jpg"
-import bg from "./Everything-Bagel-Breakfast-Sandwich-6-700x1050.jpg"
+import pc from "./Philly-Cheesesteak-Wrap-Real-Food-by-Dad.jpg";
+import bg from "./Everything-Bagel-Breakfast-Sandwich-6-700x1050.jpg";
+import sw from "./buttermilk_crispy_chicken_sandwich-7.jpg";
 
 const menu = function menu() {
     const content = document.querySelector('#content');
@@ -70,7 +71,7 @@ const menu = function menu() {
     const sandwichOuter = document.createElement('div');
     const sandwiches = document.createElement('div');
     const sandwichImg = document.createElement('img');
-    sandwichImg.src = bg;
+    sandwichImg.src = sw;
     const sandwichText = document.createElement('span');
     const sandwichList = document.createElement('ul');
     const bender = document.createElement('li');
@@ -78,18 +79,21 @@ const menu = function menu() {
     const club = document.createElement('li');
     const spy = document.createElement('li');
     const american = document.createElement('li');
+    const fries = document.createElement('li');
     sandwichText.textContent = 'Sandwiches';
     bender.textContent = `THE BENDER - roast beef, proscuitto, swiss cheese, jalapenos, banana peppers, and cranberry sauce on a hero - $8`;
     monster.textContent = `THE MONSTER - chicken cutlet, provolone cheese, fried tater tots, and buffalo sauce on a roll - $8`;
-    club.textContent = `THE CLUB - honey ham, turkey, tomatoes, onions, pepper jack cheese, and honey mustard on a roll - $8`;
-    american.textContent = `THE AMERICAN - steak, fried potatoes, American cheese, and bbq sauce on an everything bagel - $8`;
-    spy.textContent = `THE SPY - chicken fingers, avocado, mozzarella cheese, and vodka sauce on a hero - $8`;
+    club.textContent = `THE CLUB - honey ham, turkey, tomatoes, onions, pepper jack cheese, and honey mustard on sliced white bread - $8`;
+    american.textContent = `THE AMERICAN - grilled chicken, carmelized onions, American cheese, and bbq sauce on a roll - $8`;
+    spy.textContent = `THE SPY - steak, avocado, pickles, mozzarella cheese, and vodka sauce on an everything bagel - $8`;
+    fries.textContent = `Add french fries ($3) or sweet potato fries ($4)`;
     sandwiches.appendChild(sandwichText);
     sandwichList.appendChild(bender);
     sandwichList.appendChild(monster);
     sandwichList.appendChild(club);
     sandwichList.appendChild(american);
     sandwichList.appendChild(spy);
+    sandwichList.appendChild(fries);
     sandwiches.appendChild(sandwichList);
     sandwiches.classList.add('menuPanel');
     sandwichOuter.classList.add('outer');
