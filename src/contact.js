@@ -64,7 +64,7 @@ const contact = function () {
     title.appendChild(hourswknd);
     title.appendChild(email);
 
-    const social = document.createElement('div');
+    const social = document.createElement('footer');
     social.appendChild(twitterLink);
     social.appendChild(instaLink);
     social.style.margin = `5vw`;
@@ -73,9 +73,9 @@ const contact = function () {
     title.style.display = `flex`;
     title.style.flexDirection = `column`;
     title.style.alignItems = `center`;
-    title.style.justifyContent = `center`;
+    title.style.justifyContent = `space-between`;
     title.style.backgroundColor = `rgba(0, 0, 0, .25)`;
-    title.style.maxHeight = `90vh`;
+    title.style.height = `90vh`;
     title.style.width = `100vw`;
 
     innerContent.appendChild(title);

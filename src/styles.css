@@ -10,19 +10,11 @@ body {
     background-image: url(./photo-1518562923427-19e694fbd8e9.avif);
     background-position: top;
     background-repeat: repeat;
-    background-size: 100% auto;
+    background-size: cover;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-}
-
-
-#content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
 }
 
 .btn {
