@@ -15,7 +15,6 @@ body {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    max-height: 90vh;
 }
 
 
@@ -55,7 +54,7 @@ li {
     margin: 0 2vh 0 2vh;
 }
 
-span {
+.menuSpan {
     color: rgb(119, 151, 221);
     font-size: 4vw;
     font-weight: bolder;
@@ -90,5 +89,5 @@ img {
 .contactText {
     color: white;
     font-size: 4vw;
-    margin: 1vw;
+    margin: .5vw;
 }

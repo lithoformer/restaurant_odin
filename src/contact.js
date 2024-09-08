@@ -25,8 +25,8 @@ const contact = function () {
 
     const logo = document.createElement('img');
     logo.src = logopic;
-    logo.style.maxWidth = `50vw`;
-    logo.style.maxHeight = `50vh`;
+    logo.style.maxWidth = `40vw`;
+    logo.style.maxHeight = `40vh`;
 
     innerContent.style.display = `flex`;
     innerContent.style.flexDirection = `column`;
@@ -75,7 +75,7 @@ const contact = function () {
     title.style.alignItems = `center`;
     title.style.justifyContent = `center`;
     title.style.backgroundColor = `rgba(0, 0, 0, .25)`;
-    title.style.height = `90vh`;
+    title.style.maxHeight = `90vh`;
     title.style.width = `100vw`;
 
     innerContent.appendChild(title);

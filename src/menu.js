@@ -13,6 +13,7 @@ const menu = function menu() {
     const bagelImg = document.createElement('img');
     bagelImg.src = bg;
     const bagelText = document.createElement('span');
+    bagelText.classList.add('menuSpan');
     const bagelsList = document.createElement('ul');
     const breakfast = document.createElement('li');
     const creamCheese = document.createElement('li');
@@ -45,6 +46,7 @@ const menu = function menu() {
     const wrapimg = document.createElement('img');
     wrapimg.src = pc;
     const wrapText = document.createElement('span');
+    wrapText.classList.add('menuSpan');
     const wrapsList = document.createElement('ul');
     const breakfastWrap = document.createElement('li');
     const greekWrap = document.createElement('li');
@@ -74,6 +76,7 @@ const menu = function menu() {
     const sandwichImg = document.createElement('img');
     sandwichImg.src = sw;
     const sandwichText = document.createElement('span');
+    sandwichText.classList.add('menuSpan');
     const sandwichList = document.createElement('ul');
     const bender = document.createElement('li');
     const monster = document.createElement('li');
@@ -106,6 +109,7 @@ const menu = function menu() {
     const smoothieImg = document.createElement('img');
     smoothieImg.src = sm;
     const smoothieText = document.createElement('span');
+    smoothieText.classList.add('menuSpan');
     const smoothieList = document.createElement('ul');
     const cola = document.createElement('li');
     const tropical = document.createElement('li');
