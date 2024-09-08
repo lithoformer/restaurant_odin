@@ -8,8 +8,8 @@ body {
     background-color: black;
     background-image: url(./photo-1518562923427-19e694fbd8e9.avif);
     background-position: top;
-    background-repeat: repeat;
-    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
