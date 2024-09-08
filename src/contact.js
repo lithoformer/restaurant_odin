@@ -75,8 +75,8 @@ const contact = function () {
     title.style.alignItems = `center`;
     title.style.justifyContent = `center`;
     title.style.backgroundColor = `rgba(0, 0, 0, .25)`;
-    title.style.maxHeight = `100%`;
-    title.style.maxWidth = `100%`;
+    title.style.height = `90vh`;
+    title.style.width = `100vw`;
 
     innerContent.appendChild(title);
     content.appendChild(innerContent);

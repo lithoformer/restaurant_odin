@@ -8,6 +8,8 @@ navbar.style.display = `flex`;
 navbar.style.justifyContent = `center`;
 navbar.style.alignItems = `center`;
 navbar.style.gap = `2rem`;
+navbar.style.width = `100vw`;
+navbar.style.height = `10vh`;
 
 const content = document.querySelector('#content');
 
