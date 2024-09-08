@@ -1,4 +1,4 @@
-import { about } from "./about.js";
+import "./styles.css";
 import { contact } from "./contact.js";
 import { home } from "./home.js";
 import { menu } from "./menu.js";
@@ -21,12 +21,6 @@ const menuPage = document.querySelector('#menu');
 menuPage.addEventListener('click', () => {
     clear();
     menu();
-})
-
-const aboutPage = document.querySelector('#about');
-aboutPage.addEventListener('click', () => {
-    clear();
-    about();
 })
 
 const contactPage = document.querySelector('#contact');

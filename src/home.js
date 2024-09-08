@@ -21,8 +21,8 @@ const home = function home() {
     const desc = document.createElement('p')
     desc.style.color = `white`;
     desc.style.fontSize = `4vw`;
-    desc.textContent = `Serving New Jersey since 1980 and offering up a unique selection of bagels, wraps, sandwiches, and smoothies.  Voted Best Bagels in New Jersey 5 times in a row by New Jersey News!`;
-    desc.style.margin = `5vw`;
+    desc.textContent = `Serving New Jersey since 1980 and offering up a unique selection of bagels, wraps, sandwiches, and smoothies.  We have always prided ourselves in sourcing only the freshest ingredients and also in our commitment to quality and service. Voted Best Bagels in New Jersey 5 times in a row by New Jersey News!`;
+    desc.style.margin = `4vw`;
     title.appendChild(logo);
     title.appendChild(desc);
     title.style.display = `flex`;
@@ -30,8 +30,8 @@ const home = function home() {
     title.style.alignItems = `center`;
     title.style.justifyContent = `space-between`;
     title.style.backgroundColor = `rgba(0,0,0,.25)`;
-    // title.style.maxHeight = `100vh - 90px`;
-    // title.style.maxWidth = `100vw`;
+    title.style.maxHeight = `100vh`;
+    title.style.maxWidth = `100vw`;
 
     innerContent.appendChild(title);
     content.appendChild(innerContent);
