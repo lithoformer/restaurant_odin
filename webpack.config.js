@@ -4,7 +4,7 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 
 module.exports = {
-    mode: "development",
+    mode: "production",
     entry: "./src/index.js",
     output: {
         filename: "main.js",
@@ -19,9 +19,6 @@ module.exports = {
         new HtmlWebpackPlugin({
             template: "./src/template.html",
         }),
-        // new CleanWebpackPlugin({
-        //     cleanStaleWebpackAssets: false
-        // }),
     ],
     module: {
         rules: [
